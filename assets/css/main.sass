@@ -1,4 +1,9 @@
-  @keyframes fader{0%{opacity:0;}30%{opacity:1;}85%{opacity:1;}100%{opacity:0;}}
+=keyframes ($fader)
+	0%
+		opacity(0)
+	30%
+		opacity(1)
+		//{0%{opacity:0;}30%{opacity:1;}85%{opacity:1;}100%{opacity:0;}}
 
 * 
 	padding:0;
@@ -78,7 +83,6 @@ header
 		padding-left: 6px;	
 #mainText
 	animation:fader 3.001s infinite;
-	-moz-animation:fader 3.001s infinite;
-	-webkit-animation:fader 3.001s infinite;}
+
 .footer
 	height:150px;

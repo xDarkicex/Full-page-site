@@ -11,5 +11,21 @@ function changeMessage(){
 	} 
 }
 
+var backgroundArray = ["assets/images/video.jpg", "assets/images/stars2.jpg", "assets/images/junkyard.jpg"];
+var bgIndex = 0;
+
+function changeBackground(){
+	var newBg = backgroundArray[bgIndex];
+	var mainBg = document.getElementById('html');
+	mainBg.style.backgroundImage = 'url('+newBg+')';
+	bgIndex++;
+	if (bgIndex > backgroundArray.length-1){
+	bgIndex = 0;
+	} 
+}
+
 	changeMessage();
 	setInterval(changeMessage, 3000);
+
+	changeBackground();
+	setInterval(changeBackground, 9000);

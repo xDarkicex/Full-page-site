@@ -22,10 +22,17 @@
       </div>
     </div>
     <div class="footer"></div>
-    <audio controls loop autoplay hidden>
+    <audio controls loop autoplay hidden id="music">
       <source src="assets/music/southern.mp3" type="audio/mp3">
     </audio>
-    <script src="assets/js/mainText.js"></script>
+    <div id="audioplayer">
+      <button id="pButton" onclick="play()" class="play"></button>
+      <div id="timeline">
+        <div id="playhead"></div>
+      </div>
+    </div>
+    <script src="assets/js/mainText.js" async></script>
+    <script src="assets/js/music.js" async></script>
     <!--script(src='assets/js/headerscroll.js')
     -->
   </body>

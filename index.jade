@@ -32,9 +32,14 @@ html(lang="en")
 				h1(id="mainText")
 				h4 Interests, Talents and Hobbies
 		div(class="footer")
-		audio(controls loop, autoplay, hidden)
+		audio(controls loop, autoplay, hidden, id="music")
 			source(src="assets/music/southern.mp3", type="audio/mp3")
-		script(src='assets/js/mainText.js')
+		div(id="audioplayer")
+			button(id="pButton", class="play", onclick="play()")
+			div(id="timeline")
+				div(id="playhead")
+		script(src='assets/js/mainText.js' async)
+		script(src='assets/js/music.js' async)
 		//script(src='assets/js/headerscroll.js')
 			
 

@@ -41,7 +41,7 @@ function mouseUp(e) {
 		moveplayhead(e);
 		window.removeEventListener('mousemove', moveplayhead, true);
 		// change current time
-		music.currentTime = duration * clickPercent(e);
+		music.currentTime = duration / clickPercent(e);
 		music.addEventListener('timeupdate', timeUpdate, false);
 	}
 	onplayhead = false;

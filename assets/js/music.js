@@ -37,7 +37,7 @@ function mouseDown() {
 // mouseUp EventListener
 // getting input from all mouse clicks
 function mouseUp(e) {
-	if (onplayhead == true) {
+	if (onplayhead === true) {
 		moveplayhead(e);
 		window.removeEventListener('mousemove', moveplayhead, true);
 		// change current time
@@ -66,7 +66,7 @@ function moveplayhead(e) {
 function timeUpdate() {
 	var playPercent = timelineWidth * (music.currentTime / duration);
 	playhead.style.marginLeft = playPercent + "px";
-	if (music.currentTime == duration) {
+	if (music.currentTime === duration) {
 		pButton.className = "";
 		pButton.className = "play";
 	}

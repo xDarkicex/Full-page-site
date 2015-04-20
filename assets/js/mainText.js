@@ -17,7 +17,7 @@ var bgIndex = 0;
 function changeBackground(){
 	var newBg = backgroundArray[bgIndex];
 	var mainBg = document.getElementById('html');
-	mainBg.style.backgroundImage = 'url('+'newBg'+')';
+	mainBg.style.backgroundImage = 'url('+newBg+')';
 	bgIndex++;
 	if (bgIndex > backgroundArray.length-1){
 	bgIndex = 0;

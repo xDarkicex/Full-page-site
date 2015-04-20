@@ -11,7 +11,7 @@ function changeMessage(){
 	} 
 }
 
-var backgroundArray = ["assets/images/video.jpg", "assets/images/stars2.jpg", "assets/images/junkyard.jpg"];
+var backgroundArray = ["assets/images/video.jpg", "assets/images/stars2.jpg", "assets/images/junkyard.jpg", "assets/images/park.jpg", "assets/images/train.jpg"];
 var bgIndex = 0;
 
 function changeBackground(){
